@@ -26,6 +26,7 @@ import yesgif8 from "./assets/GifData/Yes/lovecutie3.gif";
 import yesgif9 from "./assets/GifData/Yes/lovecutie9.gif";
 import yesgif10 from "./assets/GifData/Yes/lovecutie6.gif";
 import yesgif11 from "./assets/GifData/Yes/lovecutie4.gif";
+import yesgif12 from "./assets/GifData/Yes/videoamor.gif";
 //! no - Gifs Importing
 import nogif0 from "./assets/GifData/No/breakRej0.gif";
 import nogif0_1 from "./assets/GifData/No/breakRej0_1.gif";
@@ -53,7 +54,7 @@ import nomusic4 from "./assets/AudioTracks/Neutral_Base_IHateU.mp3";
 import nomusic5 from "./assets/AudioTracks/Reject1_TooGood.mp3";
 import nomusic6 from "./assets/AudioTracks/perdonenme-a-todo-no-acepto.mp3";
 
-const YesGifs = [yesgif0, yesgif1, yesgif2, yesgif3, yesgif4, yesgif5, yesgif6, yesgif7, yesgif8, yesgif9, yesgif10, yesgif11];
+const YesGifs = [yesgif12,yesgif0, yesgif1, yesgif2, yesgif3, yesgif4, yesgif5, yesgif6, yesgif7, yesgif8, yesgif9, yesgif10, yesgif11];
 const NoGifs = [nogif0, nogif0_1, nogif1, nogif2, nogif3, nogif4, nogif5, nogif6, nogif7, nogif8];
 const YesMusic = [yesmusic6, yesmusic3, yesmusic4, yesmusic2, yesmusic5];
 const NoMusic = [nomusic1, nomusic2, nomusic3, nomusic4, nomusic5, nomusic6];
@@ -150,7 +151,7 @@ export default function Page() {
     if (yesPressed && noCount>3) {
       const intervalId = setInterval(() => {
         setCurrentGifIndex((prevIndex) => (prevIndex + 1) % YesGifs.length);
-      }, 5000); // Change gif every 5 seconds
+      }, 10000); // Change gif every 5 seconds
 
       // Clear the interval
       return () => clearInterval(intervalId);
