@@ -42,10 +42,10 @@ import nogif7 from "./assets/GifData/No/RejectNo.gif";
 import nogif8 from "./assets/GifData/No/breakRej7.gif";
 
 //! yes - Music Importing
-import yesmusic1 from "./assets/AudioTracks/Love_LoveMeLikeYouDo.mp3";
-import yesmusic2 from "./assets/AudioTracks/Love_EDPerfect.mp3";
-import yesmusic3 from "./assets/AudioTracks/Love_Nadaaniyan.mp3";
-import yesmusic4 from "./assets/AudioTracks/Love_JoTumMereHo.mp3";
+import yesmusic1 from "./assets/AudioTracks/Voy a Conquistar Tu Amor.mp3";
+import yesmusic2 from "./assets/AudioTracks/Camilo - Vida de Rico (Official Video).mp3";
+import yesmusic3 from "./assets/AudioTracks/Counting Crows - Accidentally In Love (Sub. Español  Lyrics).mp3";
+import yesmusic4 from "./assets/AudioTracks/yung kai - blue (official music video).mp3";
 import yesmusic5 from "./assets/AudioTracks/Rejection_DieWithASmile.mp3";
 import yesmusic6 from"./assets/AudioTracks/laquemegusta.mp3";
 //! no - Music Importing
@@ -58,7 +58,7 @@ import nomusic6 from "./assets/AudioTracks/perdonenme-a-todo-no-acepto.mp3";
 
 const YesGifs = [yesgif12,yesgif13,yesgif14,yesgif0, yesgif1, yesgif2, yesgif3, yesgif4, yesgif5, yesgif6, yesgif7, yesgif8, yesgif9, yesgif10, yesgif11];
 const NoGifs = [nogif0, nogif0_1, nogif1, nogif2, nogif3, nogif4, nogif5, nogif6, nogif7, nogif8];
-const YesMusic = [yesmusic6, yesmusic3, yesmusic4, yesmusic2, yesmusic5];
+const YesMusic = [yesmusic6, yesmusic1, yesmusic3, yesmusic4, yesmusic2, yesmusic5];
 const NoMusic = [nomusic1, nomusic2, nomusic3, nomusic4, nomusic5, nomusic6];
 
 export default function Page() {
