@@ -44,17 +44,19 @@ import yesmusic2 from "./assets/AudioTracks/Love_EDPerfect.mp3";
 import yesmusic3 from "./assets/AudioTracks/Love_Nadaaniyan.mp3";
 import yesmusic4 from "./assets/AudioTracks/Love_JoTumMereHo.mp3";
 import yesmusic5 from "./assets/AudioTracks/Rejection_DieWithASmile.mp3";
+import yesmusic6 from"./assets/AudioTracks/laquemegusta.mp3";
 //! no - Music Importing
 import nomusic1 from "./assets/AudioTracks/Rejection_LoseYouToLoveMe.mp3";
 import nomusic2 from "./assets/AudioTracks/Rejection_WeDontTalkAnyMore.mp3";
 import nomusic3 from "./assets/AudioTracks/Reject_withoutMe.mp3";
 import nomusic4 from "./assets/AudioTracks/Neutral_Base_IHateU.mp3";
 import nomusic5 from "./assets/AudioTracks/Reject1_TooGood.mp3";
+import nomusic6 from "./assets/AudioTracks/perdonenme-a-todo-no-acepto.mp3";
 
 const YesGifs = [yesgif0, yesgif1, yesgif2, yesgif3, yesgif4, yesgif5, yesgif6, yesgif7, yesgif8, yesgif9, yesgif10, yesgif11];
 const NoGifs = [nogif0, nogif0_1, nogif1, nogif2, nogif3, nogif4, nogif5, nogif6, nogif7, nogif8];
-const YesMusic = [yesmusic1, yesmusic3, yesmusic4, yesmusic2, yesmusic5];
-const NoMusic = [nomusic1, nomusic2, nomusic3, nomusic4, nomusic5];
+const YesMusic = [yesmusic6, yesmusic3, yesmusic4, yesmusic2, yesmusic5];
+const NoMusic = [nomusic1, nomusic2, nomusic3, nomusic4, nomusic5, nomusic6];
 
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
@@ -174,8 +176,7 @@ export default function Page() {
 
     // Play song on first press or every 7th press after
     if (nextCount === 1 || (nextCount - 1) % 7 === 0) {
-      const nextSongIndex = Math.floor(nextCount / 7) % NoMusic.length;
-      playMusic(NoMusic[nextSongIndex], NoMusic);
+      playMusic(NoMusic[5], NoMusic);
     }
   };
   
@@ -296,7 +297,7 @@ export default function Page() {
   useEffect(() => {
     if (noCount == 25) {
       Swal.fire({
-        title: "My love for you is endless, like the stars in the sky—shining for you every night, even if you don’t always notice. 🌟 I’ll wait patiently, proving every day that you’re my everything. ❤️ Please press ‘Yes’ and let’s make this a forever story. 🥰✨<br/>'True love never gives up; it grows stronger with time.'",
+        title: "Mi amor por ti es infinitooooooo'",
         width: 850,
         padding: "2em",
         color: "#716add",
