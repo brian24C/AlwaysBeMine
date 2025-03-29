@@ -182,15 +182,12 @@ export default function Page() {
   };
   
   const handleYesClick = () => {
-    console.log("popupShown",popupShown);
-    if(!popupShown){ // Only for Swal Fire Popup
+    if(!popupShown && noCount < 1){ // Primera vez que se presiona Sí
       setYesPressed(true);
-      playMusic(YesMusic[4], YesMusic); // Play the first "Yes" music by default
-    }1
-    console.log("noCount",noCount);
-    if(noCount>3){
+      playMusic(YesMusic[4], YesMusic);
+    } else if(noCount > 3){ // Después de presionar No varias veces
       setYesPressed(true);
-      playMusic(YesMusic[0], YesMusic); // Play the first "Yes" music by default
+      playMusic(YesMusic[0], YesMusic);
     }
   };
   
